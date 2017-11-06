@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+<<echo=FALSE>>=
+packages<-c('dplyr','stringr','tidytext','wordcloud','tm','gutenbergr')
+knitr::write_bib(packages,file='packages.bib')
+@
+
+
+
+\title{The Masque of the Red Death by Edgar Allan Poe Wordcloud}
+\author{Dayana Moncada}
+\maketitle
+
+\begin{abstract}
+In this article we construct a wordcloud, using the tidytext R package, for Edgar A. Poe's The Masque of the Red Death novel. 
+
+\end{abstract}
+
+\textit{The Masque of the Red Death} 
+"The Masque of the Red Death", originally published as "The Mask of the Red Death: A Fantasy" (1842), is a short story by Edgar Allan Poe. The story follows Prince Prospero's attempts to avoid a dangerous plague, known as the Red Death, by hiding in his abbey. He, along with many other wealthy nobles, hosts a masquerade ball within seven rooms of the abbey, each decorated with a different color. In the midst of their revelry, a mysterious figure disguised as a Red Death victim enters and makes his way through each of the rooms. Prospero dies after confronting this stranger, whose "costume" proves to contain nothing tangible inside it; the guests also die in turn
+
+\section{The gutenbergr Package} 
+Download and process public domain works in the Project Gutenberg collection http://www.gutenberg.org/. Includes metadata for all Project Gutenberg works, so that they can be searched and retrieved.
+
+<<warning=FALSE,message=FALSE>>=
+library(gutenbergr)
+gutenberg_works(author == "Poe, Edgar Allan")
+poe<-gutenberg_download(1064)
+@
+
+
+\noindent Now we are ready for some data cleaning.
+
+\section{The Wordcloud}
+To make the wordcloud, we first have to break up the lines into words.  We can use a function from the tidytext package for this:
+
+<<warning=FALSE,message=FALSE>>=
+library(dplyr)
+library(tidytext)
+poe_words<-poe%>%
+  unnest_tokens(word,text)
+@
+
+We can remove common, unimportant words with the stop\_words data frame and some dplyr:
+<<>>=
+poe_words<-poe_words%>%
+  filter(!(word %in% stop_words$word))
+
+poe_words
+@
+
+
+Now, we need to calculate the frequencies of the words in the novel.  Again, we can use standard dplyr techniques for this:
+<<warning=FALSE,message=FALSE>>=
+library(dplyr)
+poe_freq<-poe_words%>%
+  group_by(word)%>%
+  summarize(count=n())
+@
+
+Finally, it's time to generate the wordcloud:
+<<warning=FALSE,message=FALSE>>=
+library(wordcloud)
+wordcloud(poe_freq$word,poe_freq$count)
+@
+
+\bibliographystyle{apa}
+\bibliography{article,packages}
+\nocite{*}
+
+
+\end{document}
