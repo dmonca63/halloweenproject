@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2017 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  6 NOV 2017 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,16 +164,16 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 62.
+(Font)              <12> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 62.
+(Font)              <8> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 62.
-Package color Info: Redefining color shadecolor on input line 76.
+(Font)              <6> on input line 61.
+Package color Info: Redefining color shadecolor on input line 75.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 78.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 77.
 
-Overfull \hbox (53.99652pt too wide) in paragraph at lines 104--104
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 103--103
 []\OT1/cmtt/m/n/10 ## #   gutenberg_author_id <int>, language <chr>, gutenberg_
 bookshelf <chr>,[] 
  []
@@ -181,46 +181,48 @@ bookshelf <chr>,[]
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package color Info: Redefining color shadecolor on input line 118.
-Package color Info: Redefining color shadecolor on input line 130.
+Package color Info: Redefining color shadecolor on input line 117.
+Package color Info: Redefining color shadecolor on input line 129.
 
 [2]
-Package color Info: Redefining color shadecolor on input line 159.
-Package color Info: Redefining color shadecolor on input line 171.
+Package color Info: Redefining color shadecolor on input line 158.
+Package color Info: Redefining color shadecolor on input line 170.
  <figure/unnamed-chunk-6-1.pdf, id=17, 505.89pt x 505.89pt>
 File: figure/unnamed-chunk-6-1.pdf Graphic file (type pdf)
 
 <use figure/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: figure/unnamed-chunk-6-1.pdf used on input line 177.
+Package pdftex.def Info: figure/unnamed-chunk-6-1.pdf used on input line 176.
 (pdftex.def)             Requested size: 345.0pt x 345.00414pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 177--178
+Overfull \hbox (15.0pt too wide) in paragraph at lines 176--177
 [][] 
  []
 
-No file themasque.bbl.
-[3] [4 <./figure/unnamed-chunk-6-1.pdf>] (./themasque.aux) ) 
+(./themasque.bbl [3] [4 <./figure/unnamed-chunk-6-1.pdf>]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¼ in font cmr10!
+) [5] (./themasque.aux) ) 
 Here is how much of TeX's memory you used:
- 1978 strings out of 492995
- 27867 string characters out of 6132704
- 94099 words of memory out of 5000000
- 5514 multiletter control sequences out of 15000+600000
+ 2007 strings out of 492995
+ 28315 string characters out of 6132704
+ 94385 words of memory out of 5000000
+ 5541 multiletter control sequences out of 15000+600000
  8401 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,6n,25p,686b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on themasque.pdf (4 pages, 113133 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb>
+Output written on themasque.pdf (5 pages, 122054 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

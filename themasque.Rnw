@@ -1,13 +1,13 @@
 \documentclass{article}
 \usepackage{natbib}
 
+
 \begin{document}
 
 <<echo=FALSE>>=
 packages<-c('dplyr','stringr','tidytext','wordcloud','tm','gutenbergr')
 knitr::write_bib(packages,file='packages.bib')
 @
-
 
 
 \title{The Masque of the Red Death by Edgar Allan Poe Wordcloud}
@@ -68,7 +68,7 @@ wordcloud(poe_freq$word,poe_freq$count)
 @
 
 \bibliographystyle{apa}
-\bibliography{article,packages}
+\bibliography{article.bib,packages.bib}
 \nocite{*}
 
 
